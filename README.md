@@ -77,6 +77,13 @@ $ cp -a public_bak/* public/
 $ cp public_bak/.htaccess public/
 ```
 
+1- Create a new directory alongside public_html/ directory (public_html directory in some hosts maybe different name like www).
+
+2- Copy all your application source code except public directory in new directory (for example directory name is project).
+
+3- Copy all contents inside the public/ directory to public_html/ directory.
+
+
 Because we created the symbol link from `www` directory to make it become the *virtual* `public` in project, so we have to update the `~/www/index.php` in order to replace paths with the new ones:
 
 ```diff
